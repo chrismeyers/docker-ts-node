@@ -1,4 +1,4 @@
 #!/bin/bash
 
 . ./config.sh
-docker build -t $service .
+docker build -t $SERVICE .
