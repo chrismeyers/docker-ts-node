@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service=ts-node
+service=docker-ts-node
 debugPort=13476
 externalPort=13475
 appPort=13475

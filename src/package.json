@@ -1,11 +1,11 @@
 {
-  "name": "ts-node",
+  "name": "docker-ts-node",
   "version": "1.0.0",
-  "description": "Node.js with TypeScript",
+  "description": "Node.js with TypeScript, dockerized",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "./node_modules/.bin/ts-node-dev app/app.ts",
-    "debug": "./node_modules/.bin/ts-node-dev --inspect=0.0.0.0:13476 app/app.ts"
+    "dev": "./node_modules/.bin/ts-node-dev -- app/app.ts",
+    "debug": "./node_modules/.bin/ts-node-dev --inspect=0.0.0.0:13476 -- app/app.ts"
   },
   "author": "",
   "license": "ISC",
