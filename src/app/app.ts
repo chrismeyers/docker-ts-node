@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
   let name = req.query.name || 'world';
   let greeter = new Greeter(name);
-  res.send(greeter.greet());
+  res.json({'greeting': greeter.greet()});
 });
 
 app.listen(port, () => {
