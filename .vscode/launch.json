@@ -9,7 +9,7 @@
       "request": "attach",
       "name": "Debug (container)",
       "address": "0.0.0.0",
-      "port": 13476,
+      "port": 3001,
       "localRoot": "${workspaceFolder}/src",
       "remoteRoot": "/root/app"
     },
@@ -18,7 +18,7 @@
       "request": "attach",
       "name": "Debug (local)",
       "address": "0.0.0.0",
-      "port": 13476,
+      "port": 3001,
       "localRoot": "${workspaceFolder}/src",
       "remoteRoot": "${workspaceFolder}/src",
     }
