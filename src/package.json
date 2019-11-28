@@ -4,8 +4,8 @@
   "description": "Node.js with TypeScript, dockerized",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "./node_modules/.bin/ts-node-dev --no-notify -- app/app.ts",
-    "debug": "./node_modules/.bin/ts-node-dev --no-notify --inspect=0.0.0.0:13476 -- app/app.ts"
+    "dev": "./node_modules/.bin/ts-node-dev --respawn --transpile-only --no-notify -- app/app.ts",
+    "debug": "./node_modules/.bin/ts-node-dev --respawn --transpile-only --no-notify --inspect=0.0.0.0:13476 -- app/app.ts"
   },
   "author": "",
   "license": "ISC",
