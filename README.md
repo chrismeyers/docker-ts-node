@@ -4,13 +4,13 @@ Node.js with TypeScript, dockerized
 ### Docker
 ```
 $ cd docker/dev
-$ ./build.sh && ./dev.sh && docker logs -f docker-ts-node
+$ ./build.sh && ./dev.sh [--debug] && docker logs -f docker-ts-node
 ```
 
 ### Local
 ```
 $ cd src
-$ npm run debug
+$ npm run [dev|debug]
 ```
 
 ### Debugging
