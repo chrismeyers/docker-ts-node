@@ -10,11 +10,7 @@
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "@app/*": ["app/*"]
-    }
+    "outDir": "dist"
   },
   "include": [
     "**/*.ts"

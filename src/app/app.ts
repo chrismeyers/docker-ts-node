@@ -1,5 +1,5 @@
 import express from 'express';
-import { Greeter } from '@app/Greeter';
+import { Greeter } from './Greeter';
 
 const app: express.Application = express();
 const port: number = Number(process.env.PORT) || 3000;
