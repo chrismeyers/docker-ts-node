@@ -2,6 +2,8 @@
 
 . ./config.sh
 
+debug=$([ "$1" == "--debug" ] && echo "true" || echo "false")
+
 docker rm -f $SERVICE
 docker run --name="$SERVICE" \
     --log-opt max-size=25m \
@@ -13,6 +15,6 @@ docker run --name="$SERVICE" \
     -p $EXTERNAL_PORT:$APP_PORT \
     -p $DEBUG_PORT:$DEBUG_PORT \
     -e "NODE_ENV=staging" \
-    -e "DEBUG=true" \
+    -e "DEBUG=$debug" \
     -e "PORT=$APP_PORT" \
     -d $SERVICE
