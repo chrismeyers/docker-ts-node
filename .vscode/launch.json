@@ -21,6 +21,19 @@
       "port": 3001,
       "localRoot": "${workspaceFolder}/src",
       "remoteRoot": "${workspaceFolder}/src",
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "program": "${workspaceFolder}/src/node_modules/.bin/jest",
+      "cwd": "${workspaceRoot}/src",
+      "args": ["${relativeFile}"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "windows": {
+        "program": "${workspaceFolder}/src/node_modules/jest/bin/jest"
+      }
     }
   ]
 }
