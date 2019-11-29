@@ -5,7 +5,7 @@ const app: express.Application = express();
 const port: number = Number(process.env.PORT) || 3000;
 
 app.get('/', (req: express.Request, res: express.Response) => {
-  let name: string = req.query.name || 'world';
+  let name: string = req.query.name;
   let greeter: Greeter = new Greeter(name);
   res.json({'greeting': greeter.greet()});
 });
