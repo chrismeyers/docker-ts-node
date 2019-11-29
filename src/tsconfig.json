@@ -10,14 +10,7 @@
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "@app/*": ["app/*"]
-    },
-    "plugins": [
-      { "transform": "typescript-transform-paths" }
-    ]
+    "outDir": "dist"
   },
   "include": [
     "**/*.ts"
@@ -25,6 +18,7 @@
   "exclude": [
     "**/*.test.ts",
     "**/*.d.ts",
-    "dist"
+    "dist",
+    "node_modules"
   ]
 }

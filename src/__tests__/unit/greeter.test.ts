@@ -1,4 +1,4 @@
-import { Greeter } from '@app/Greeter';
+import { Greeter } from '../../app/Greeter';
 
 describe('greetings', () => {
   test('greet everyone', () => {

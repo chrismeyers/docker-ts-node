@@ -4,9 +4,9 @@
   "description": "Node.js with TypeScript, dockerized",
   "main": "dist/app.js",
   "scripts": {
-    "compile": "ttsc",
-    "dev": "ts-node-dev -C ttypescript --respawn --no-notify -- app/app.ts",
-    "debug": "ts-node-dev -C ttypescript --respawn --no-notify --inspect=0.0.0.0:3001 -- app/app.ts",
+    "compile": "tsc",
+    "dev": "ts-node-dev --respawn --no-notify -- app/app.ts",
+    "debug": "ts-node-dev --respawn --no-notify --inspect=0.0.0.0:3001 -- app/app.ts",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -20,9 +20,7 @@
     "ts-jest": "^24.2.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "tslint": "^5.20.1",
-    "ttypescript": "^1.5.8",
-    "typescript": "^3.7.2",
-    "typescript-transform-paths": "^1.1.13"
+    "typescript": "^3.7.2"
   },
   "dependencies": {
     "express": "^4.17.1"
